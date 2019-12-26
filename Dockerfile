@@ -10,4 +10,4 @@ COPY ./rootfs/app/project ./project
 RUN sbt update
 
 COPY ./rootfs /
-RUN sbt clean compile
+RUN sbt clean package

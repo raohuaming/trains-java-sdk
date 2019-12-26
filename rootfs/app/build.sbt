@@ -7,6 +7,9 @@ lazy val root = ( project in file ("."))
     version := "0.0.1",
     libraryDependencies ++= Seq(
       "org.scalatest" %% "scalatest" % "3.1.0" % Test,
+      "org.json4s" %% "json4s-native" % "3.6.7",
+      "org.json4s" %% "json4s-jackson" % "3.6.7",
+      "com.softwaremill.sttp.client" %% "core" % "2.0.0-M6",
     )
   )
 
