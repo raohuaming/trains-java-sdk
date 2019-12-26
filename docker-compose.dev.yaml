@@ -1,0 +1,13 @@
+version: "3.4"
+
+services:
+  app:
+    build:
+      context: .
+      target: SBT_DEV
+    volumes:
+      - ./rootfs/app:/app-dev
+    working_dir: /app-dev
+    command: cat
+    stdin_open: true
+    tty: true
